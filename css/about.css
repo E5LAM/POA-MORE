@@ -1,0 +1,124 @@
+/* start about */
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.about-main-section {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-main-section h1 {
+  margin-top: -50px;
+  font-size: 80px;
+  color: var(--secondary-color);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about-main-image {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  filter: blur(2px);
+  background-size: cover;
+}
+
+.about-main-poa {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.about-main-poa .section {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  padding: 0 0 30px;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.section-heading {
+  color: var(--secondary-alt-color);
+  font-size: 30px;
+  position: relative;
+  width: fit-content;
+}
+
+.section-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  height: 2px;
+  width: 10%;
+  background-color: var(--secondary-alt-color);
+  transition: 0.3s;
+}
+.section-heading:hover::after {
+  width: 100%;
+}
+
+.about-main-poa .section div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-main-poa .section div p {
+  font-size: 18px;
+}
+
+.about-main-poa .section div p:first-child {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.about-main-poa .mission-vision {
+  display: flex;
+  gap: 30px;
+}
+
+.about-main-poa .mission-vision .section {
+  flex: 1;
+}
+.about-main-poa .mission-vision .section {
+  border: none;
+}
+
+.about-main-poa .mission-vision p {
+  font-size: 18px !important;
+  font-weight: 400 !important;
+}
+
+@media (max-width: 768px) {
+  .about-main-section h1 {
+    font-size: 40px;
+  }
+  .about-main-poa .mission-vision {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .about-main-poa .mission-vision .section:first-child {
+    border-bottom: 1px solid var(--primary-color);
+  }
+}

@@ -1,251 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-/* start services */
+
 :root {
   --primary-color: #434343;
   --secondary-color: #ecd18e;
   --secondary-alt-color: #bfab7b;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
 
-/* Services Image Section */
-.services-img {
-  background-image: url("../img/dafza-services-header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-  position: relative;
+html {
+  scroll-behavior: smooth;
 }
 
-.services-text {
-  color: var(--secondary-color);
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0,  0.3);
+li {
+  list-style: none;
 }
 
-/* Sub-links styles */
-.sub-links {
-  border-right: 1px solid #d1d1d1;
-  height: 50vh;
-}
-
-.sub-links ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.sub-links ul li {
-  position: relative;
-  padding-left: 20px;
-}
-
-.sub-links ul li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 7px;
-  height: 7px;
-  background-color: #4b4b4b;
-  border-radius: 50%;
-}
-
-.sub-links ul li {
-  margin-bottom: 10px;
-}
-
-.sub-links ul li a {
-  color: #4b4b4b;
+a {
   text-decoration: none;
 }
 
-.sub-links ul li .active {
-  color: #171717;
-  font-weight: bold;
+header {
+  height: 64px;
 }
 
-/* Styling the icon */
-.custom-icon {
-  color: var(--secondary-alt-color);
-  font-size: 40px;
+footer {
+  height: 180px;
+  background-color: var(--primary-color);
 }
-
-/* Styling the list items with check mark */
-.boxes-details ul li {
-  position: relative;
-  padding-left: 25px;
-  margin-bottom: 10px;
-}
-
-.boxes-details ul li::before {
-  content: "\f00c";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #2df506;
-}
-
-.first-sec {
-  margin-top: 100px;
-}
-
-.details .box .boxes-details h2 {
-  font-weight: 400;
-  font-size: 22px;
-  color: var(--secondary-alt-color);
-}
-
-.details .icon i {
-  color: var(--secondary-alt-color) !important;
-}
-/* notarization section */
-.notarization {
-  background-color: #edf2f5;
-  padding: 100px 0;
-  margin-top: 100px;
-}
-
-.notarization .sec-details h4 {
-  color: var(--secondary-alt-color);
-}
-
-/* mofa section */
-.mofa {
-  margin-top: 100px;
-  padding: 0 15px;
-}
-.mofa .col-md-2 {
-  background-color: #f8f9fa;
-  border: 1px solid #dee2e6;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  transition: transform 0.3s ease;
-}
-
-.mofa .col-md-2:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.mofa h5 {
-  margin-top: 10px;
-  font-size: 1.1rem;
-  color: #343a40;
-}
-
-.mofa .icon {
-  color: var(--secondary-alt-color);
-}
-
-.mofa .box h5 {
-  color: var(--primary-color);
-}
-
-/* translation section */
-.translation {
-  background-color: #f9f9f9;
-  margin-top: 100px;
-  padding: 100px 0;
-}
-
-.translation .service-box {
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 25px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: all 0.3s ease;
-  margin-bottom: 30px;
-  height: 100%;
-}
-
-.translation .service-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.translation .service-box .icon {
-  font-size: 3rem;
-  margin-bottom: 15px;
-  color: var(--primary-color);
-}
-
-.translation h4 {
-  font-size: 1.4rem;
-  color: var(--secondary-alt-color);
-  margin-bottom: 15px;
-}
-
-.translation p {
-  font-size: 1.1rem;
-  color: #495057;
-}
-/* end translation section */
-
-/* verification */
-.verification {
-  margin-top: 100px;
-  background-color: #f8f9fa;
-}
-/* end verification */
-
-.details .details-heading {
-  color: var(--secondary-alt-color);
-}
-
-.sec-heading {
-  color: var(--secondary-alt-color);
-  font-size: 30px;
-  position: relative;
-  width: fit-content;
-}
-
-.sec-heading::after {
-  content: "";
-  position: absolute;
-  bottom: -6px;
-  left: 0;
-  height: 2px;
-  width: 10%;
-  background-color: var(--secondary-alt-color);
-  transition: 0.3s;
-}
-.sec-heading:hover::after {
-  width: 100%;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .sub-links {
-    border: none;
-    height: auto;
-    padding-bottom: 50px;
-  }
-
-  .translation h4 {
-    font-size: 1.2rem;
-  }
-
-  .translation p {
-    font-size: 1rem;
-  }
-
-  .translation .second-box {
-    margin-top: 50px;
-  }
-
-  .verification h2 {
-    margin-bottom: 40px !important;
-  }
-}
-
-/* end services */
