@@ -29,7 +29,7 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
   background-color: #434343;
   box-shadow: inset 1px 1px 5px #434343;
 }
