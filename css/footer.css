@@ -1,0 +1,76 @@
+/*======= Start footer  =======*/
+
+footer {
+  position: relative;
+}
+footer .overley {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #000000bf;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  opacity: 0.3;
+}
+footer > img {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+footer .footer_contant {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 80;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 30px 60px;
+  display: flex;
+  gap: 20px;
+  z-index: 100;
+}
+footer .footer_contant > div {
+  width: 25%;
+  color: #b5b5b5;
+}
+footer .footer_contant > div > h2 {
+  margin-bottom: 30px;
+}
+footer .footer_links {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer_links > h2 {
+  font-size: 23px;
+  margin-bottom: 30px;
+}
+footer .footer_links div {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+footer .footer_links div a {
+  display: block;
+  font-size: 20px;
+  color: #b5b5b5;
+  cursor: pointer;
+  font-weight: bold;
+}
+footer .footer_links div a span {
+  padding-left: 10px;
+}
+footer .footer_links div a i {
+  color: white;
+}
+footer .footer--contact > div > a > i {
+  color: #58839f;
+}
+footer .footer--contact > div > a > span {
+  font-size: 16px;
+  font-weight: normal;
+}
+/*======= End Footer  =======*/

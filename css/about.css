@@ -17,7 +17,7 @@
 }
 
 .about-main-section {
-  min-height: calc(100vh - 64px);
+  min-height: calc(100vh - 100px);
   display: flex;
   position: relative;
   overflow: hidden;
@@ -108,17 +108,4 @@
 .about-main-poa .mission-vision p {
   font-size: 18px !important;
   font-weight: 400 !important;
-}
-
-@media (max-width: 768px) {
-  .about-main-section h1 {
-    font-size: 40px;
-  }
-  .about-main-poa .mission-vision {
-    flex-direction: column;
-    gap: 60px;
-  }
-  .about-main-poa .mission-vision .section:first-child {
-    border-bottom: 1px solid var(--primary-color);
-  }
 }

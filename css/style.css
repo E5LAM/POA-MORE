@@ -28,11 +28,15 @@ a {
   text-decoration: none;
 }
 
-header {
-  height: 64px;
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #434343;
+  box-shadow: inset 1px 1px 5px #434343;
 }
-
-footer {
-  height: 180px;
-  background-color: var(--primary-color);
+::-webkit-scrollbar-thumb {
+  /* background-color: linear-gradient(#ecd18e, #434343, #ecd18e 50%); */
+  background-color: #ecd18e;
+  box-shadow: 0.65rem 0.65rem 2rem #ecd18e, 0.65rem 0.65rem 2rem #ecd18e,
+    0.3px 3px 6px #ecd18e inset, -0.3px -2px 6px #ecd18e inset;
+  border-radius: 8px;
 }

@@ -1,0 +1,316 @@
+@media (max-width: 1200px) {
+  .news {
+    padding: 50px 30px;
+  }
+  footer .footer_contant {
+    flex-wrap: wrap;
+  }
+
+  .footer_pargraph {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .landing .carousel_text {
+    font-size: 20px;
+  }
+  .airport {
+    flex-direction: column;
+  }
+  .airport .airport_image {
+    width: 100%;
+  }
+  .airport .airport_contant {
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .business {
+    flex-direction: column;
+  }
+  .business .business_contant {
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .business .business_img {
+    width: 100%;
+  }
+  .news {
+    padding: 50px 15px;
+  }
+  footer .footer_contant > div {
+    width: 30%;
+  }
+  .text-center {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    margin-top: 40px;
+  }
+  header .navbar {
+    padding: 10px 15px;
+  }
+  .header_contant--info {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #fafafa;
+    width: 100%;
+  }
+  .header_contant--info a {
+    color: #808080;
+  }
+  .hidden_screen {
+    display: none;
+  }
+  .navbar_screen {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    background: white;
+    width: 100%;
+    left: 0px;
+    top: 100px;
+  }
+  .custom_icon {
+    border: 0px !important;
+  }
+  .navbar-toggler:focus {
+    box-shadow: unset !important;
+  }
+  .navbar_screen a {
+    font-size: 20px;
+  }
+  .news {
+    flex-direction: column;
+  }
+  .news .news_content {
+    width: 100%;
+  }
+  .news .news_images {
+    width: 100%;
+  }
+  .news .news_images_overlay {
+    width: 50%;
+    height: 250px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header_contant--info {
+    display: none;
+  }
+  .enquire {
+    display: none !important;
+  }
+  .navbar_screen {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .business .business_contant {
+    order: 1;
+  }
+}
+
+@media (min-width: 769px) {
+  .img_hidden {
+    display: block;
+    background: #fafafa;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing .landing_slider {
+    height: 70vh;
+  }
+  .landing .landing_slider .slide .carousel-inner img {
+    padding: 0px 60px;
+    object-fit: unset;
+  }
+
+  .img_hidden {
+    display: none;
+  }
+  .landing .carousel-control-next,
+  .landing .carousel-control-prev {
+    display: none;
+  }
+  .airport .airport_contant p {
+    line-height: 50px;
+    font-size: 20px;
+  }
+  .airport .airport_contant a {
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 8px;
+  }
+  .business .business_contant p {
+    font-size: 20px;
+  }
+  .business .business_contant a {
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 8px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .contactus .contact_link {
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 8px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .contactus_content h2 {
+    font-size: 19px;
+  }
+
+  footer .footer_contant > div {
+    width: 43%;
+  }
+  .text-center {
+    font-size: 2rem;
+  }
+
+  .services-text {
+    font-size: 1.25rem;
+  }
+  .sub-links {
+    border: none;
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .translation h4 {
+    font-size: 1.2rem;
+  }
+
+  .translation p {
+    font-size: 1rem;
+  }
+
+  .translation .second-box {
+    margin-top: 50px;
+  }
+
+  .verification h2 {
+    margin-bottom: 40px !important;
+  }
+
+  .about-main-section h1 {
+    font-size: 40px;
+  }
+  .about-main-poa .mission-vision {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .about-main-poa .mission-vision .section:first-child {
+    border-bottom: 1px solid var(--primary-color);
+  }
+}
+
+@media (max-width: 600px) {
+  .landing .landing_slider {
+    height: 50vh;
+  }
+  .landing .landing_slider .slide .carousel-inner img {
+    padding: 0px 15px;
+    object-fit: unset;
+  }
+  .landing .carousel_text {
+    padding: 0px 5px;
+    font-size: 15px;
+  }
+  .enquire {
+    display: none !important;
+  }
+  .header_contant--info {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #fafafa;
+    width: 100%;
+  }
+  .airport .airport_contant {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .airport .airport_contant h2 {
+    font-size: 20px;
+    text-align: start;
+  }
+  .airport .airport_contant h3 {
+    font-size: 15px;
+    text-align: justify;
+  }
+  .airport .airport_contant a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .business .business_contant {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .business .business_contant h2 {
+    font-size: 20px;
+    text-align: start;
+  }
+  .business .business_contant h3 {
+    font-size: 15px;
+    text-align: justify;
+  }
+  .contactus_content h2 {
+    font-size: 15px;
+  }
+  .news .news_images .news_images__img .news_images__text {
+    flex-direction: column;
+  }
+  .news .news_images_overlay {
+    width: 100%;
+    height: 250px;
+  }
+  .news_text {
+    width: 100%;
+    align-items: end;
+  }
+  .news_text span {
+    display: black;
+    margin-right: 10px;
+  }
+  .news_word {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 10px;
+    width: 100%;
+  }
+  footer .footer_contant > div {
+    width: 100%;
+  }
+  footer .footer_contant {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .text-center {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  header {
+    padding: 0px 25px;
+  }
+}

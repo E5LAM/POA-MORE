@@ -1,0 +1,358 @@
+.enquire {
+  color: white !important;
+  background: #005c7c;
+  border-radius: 20px;
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+  font-size: 14px;
+}
+/*======= Start Global  =======*/
+.global {
+  align-items: center;
+  display: flex;
+  justify-content: center !important;
+}
+.text-center {
+  text-align: center;
+  font-size: 4rem;
+}
+/*======= End Global  =======*/
+/*======= Start Landing  =======*/
+.landing {
+  position: relative;
+}
+.landing .carousel_text {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+.landing .landing_slider {
+  height: 80vh;
+}
+.landing .landing_slider .slide {
+  height: 100%;
+}
+.landing .landing_slider .slide .carousel-inner {
+  height: 100%;
+}
+.landing .landing_slider .slide .carousel-inner .carousel-item {
+  height: 100%;
+}
+.landing .landing_slider .slide .carousel-inner img {
+  height: 100%;
+  /* background-position: top top; */
+  object-fit: cover;
+}
+.landing .carousel-control-next,
+.landing .carousel-control-prev {
+  width: 2%;
+  font-size: 23px;
+}
+.hidden_screen {
+  display: flex;
+}
+/*======= End Landing  =======*/
+/*======= Start airport  =======*/
+.airport {
+  display: flex;
+  gap: 40px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.airport .airport_image {
+  width: 45%;
+}
+.airport .airport_image img {
+  width: 100%;
+  height: 100%;
+}
+.airport .airport_contant {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+  gap: 30px;
+}
+.airport .airport_contant h2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.airport .airport_contant h3 {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #7a7a7a;
+  line-height: 36px;
+}
+.airport .airport_contant p {
+  line-height: 50px;
+  font-size: 30px;
+}
+.airport .airport_contant a {
+  background: #bfab7b;
+  width: fit-content;
+  color: #fff;
+  padding: 16px 50px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  font-weight: bold;
+  border: 5px solid transparent;
+}
+.airport .airport_contant a:hover {
+  background: transparent;
+  border-color: #bfab7b;
+  color: #bfab7b;
+}
+/*======= End airport  =======*/
+/*======= STart business  =======*/
+.business {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 120px;
+  justify-content: end;
+}
+.business .business_contant {
+  width: 30%;
+  min-width: 30%;
+  display: flex;
+  flex-direction: column;
+  /* padding-left: 120px; */
+  order: 0;
+  gap: 30px;
+  order: 1;
+}
+.business .business_contant h2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.business .business_contant h3 {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #7a7a7a;
+  line-height: 36px;
+}
+.business .business_contant p {
+  line-height: 50px;
+  font-size: 30px;
+}
+.business .business_contant p .step {
+  font-weight: bold;
+}
+.business .business_contant a {
+  background: #bfab7b;
+  width: fit-content;
+  color: #fff;
+  padding: 16px 50px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  font-weight: bold;
+  border: 5px solid transparent;
+}
+.business .business_contant a:hover {
+  background: transparent;
+  color: white;
+  border-color: #bfab7b;
+  color: #bfab7b;
+}
+.business .business_img {
+  width: 50%;
+  order: 1;
+  display: flex;
+  justify-content: start;
+}
+.business .business_img img {
+  width: 100%;
+}
+/*======= End business  =======*/
+/*======= Start contact us  =======*/
+.contactus {
+  height: 40vh;
+  position: relative;
+}
+.contactus .contactus_img {
+  width: 100%;
+  height: 100%;
+}
+
+.contactus .contactus_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+.contactus_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  position: absolute;
+  transform: translatex(-50%);
+  top: 0;
+  left: 50%;
+  z-index: 100;
+}
+.contactus_content h2 {
+  font-size: 35px;
+}
+.contactus_content .contactus_icon {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+}
+.fa-facebook {
+  color: #005c7c;
+}
+.fa-instagram {
+  color: #3a3a3a;
+}
+.fa-linkedin {
+  color: #117eb9;
+}
+.fa-x-twitter {
+  color: #000;
+}
+.fa-youtube {
+  color: red;
+}
+.contactus_content .contactus_icon i {
+  font-size: 25px;
+}
+.contactus .contact_link {
+  background: #bfab7b;
+  width: fit-content;
+  color: #fff;
+  padding: 16px 50px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  font-weight: bold;
+  border: 5px solid transparent;
+}
+.contactus .contact_link:hover {
+  background: transparent;
+  color: white;
+  border-color: #bfab7b;
+  color: #bfab7b;
+}
+/*======= End contact us  =======*/
+/*======= Start News  =======*/
+.news {
+  background: #e5e5e5;
+  padding: 50px 18%;
+  display: flex;
+  gap: 10px;
+}
+.news .news_content {
+  background: #edf1f4;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.news .news_content .news_content__text {
+  padding: 15px;
+}
+.news .news_content .news_content__video {
+  width: 100%;
+}
+.news .news_content .news_content__video video {
+  width: 100%;
+}
+.news .news_content a {
+  background: #ffdc00;
+  color: #222;
+  padding: 5px 20px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: fit-content;
+}
+.news .news_images {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.overley {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #000000bf;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  opacity: 0.3;
+}
+.news_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-left: 30px;
+  padding-top: 30px;
+  z-index: 100;
+  font-size: 14px;
+}
+.news_text p {
+  color: white;
+}
+.news_text span {
+  color: #222;
+  background: #ffdc00;
+  width: fit-content;
+  padding: 3px 25px;
+}
+.news .news_images {
+  gap: 10px;
+}
+.news .news_images > div {
+  width: 100%;
+  position: relative;
+}
+.news .news_images > div > img {
+  width: 100%;
+}
+.news .news_images .news_images__img {
+  width: 100%;
+}
+.news .news_images .news_images__img img {
+  width: 100%;
+}
+.news .news_images .news_images__img .news_images__text {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.news_images_overlay {
+  position: relative;
+}
+.news_images_overlay {
+  height: 200px;
+}
+.news_images_overlay img {
+  height: 100%;
+  width: 100%;
+}
+.news_word {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 10px;
+}
+.flx {
+  justify-content: end;
+}
+/*======= End News  =======*/

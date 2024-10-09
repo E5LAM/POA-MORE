@@ -2,7 +2,7 @@
 
 /* Services Image Section */
 .services-img {
-  min-height: calc(100vh - 64px);
+  min-height: calc(100vh - 100px);
   display: flex;
   position: relative;
   overflow: hidden;
@@ -221,33 +221,4 @@
 .sec-heading:hover::after {
   width: 100%;
 }
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .services-text {
-    font-size: 1.25rem;
-  }
-  .sub-links {
-    border: none;
-    height: auto;
-    padding-bottom: 50px;
-  }
-
-  .translation h4 {
-    font-size: 1.2rem;
-  }
-
-  .translation p {
-    font-size: 1rem;
-  }
-
-  .translation .second-box {
-    margin-top: 50px;
-  }
-
-  .verification h2 {
-    margin-bottom: 40px !important;
-  }
-}
-
 /* end services */
