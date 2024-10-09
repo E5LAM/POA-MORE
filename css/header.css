@@ -60,7 +60,7 @@ header .header_contant .header_contant--info {
   display: flex;
 }
 header .header_contant div a {
-  color: var(--orange);
+  color: #bfab7b;
   display: block;
   transition: 0.3s ease;
 }
@@ -82,7 +82,7 @@ header .header_contant .active {
 }
 
 header .header_contant .nav-link {
-  color: var(--orange) !important;
+  color: #bfab7b!important;
   font-weight: 500;
 }
 
