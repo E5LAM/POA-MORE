@@ -1,5 +1,124 @@
 /* start services */
 
+:root {
+  --primary-color: #434343;
+  --secondary-color: #ecd18e;
+  --secondary-alt-color: #bfab7b;
+}
+
+/* 3d Cards section  */
+
+.cards-section{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 -2rem;
+  flex-wrap: wrap;
+  gap: 1rem .2rem;
+}
+
+.cards-wrapper {
+  /* margin-top: 50px; */
+}
+.card-container {
+  perspective: 1200px;
+}
+.card {
+  margin: 0 auto;
+  height: 400px;
+  width: 272px;
+  max-width: 80%;
+  position: relative;
+  border-radius: 25px;
+  transition: all 1s ease;
+  transform-style: preserve-3d;
+  box-shadow: 1px 3px 3px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.rotated {
+  transform: rotateY(-180deg);
+}
+.card-contents {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  h2, p {
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+  }
+  h2 {
+    font-size: 1.2em;
+    margin: 0 auto;
+    color: whitesmoke;
+    width: 85%;
+    line-height: 1.5em;
+    /* position: absolute; */
+    margin-top: 2.5rem;
+  }
+  hr {
+    width: 50%;
+    margin: 20px auto;
+  }
+  p,h4 {
+    margin: 0 auto;
+    color:black;
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: .6rem .5rem;
+    width: 65%;
+    text-transform: capitalize;
+    font-size: 1rem;
+  }
+}
+.card-depth {
+   transform: translateZ(100px) scale(0.98);
+   perspective: inherit;
+   height: 99%;
+   /* overflow: hidden; */
+
+}
+.card-front {
+  /* background: linear-gradient(to top left, #3a6186, #89253e);            */
+  /* background: var(--secondary-alt-color); */
+  background: #e6c572;
+  transform-style: preserve-3d;
+}
+.card-back {
+  transform: rotateY(180deg);
+  /* background: linear-gradient(to top left, #ffa17f, #00223e); */
+  /* background: #e6c572; */
+  background: var(--secondary-alt-color);
+  transform-style: preserve-3d;
+}
+
+.card-back h2{
+  color: whitesmoke;
+}
+
+.card-back ol{
+  margin-top: 1.3rem;
+}
+.card-back ol li{
+  list-style-type: decimal;
+  color: whitesmoke;
+  width: 95%;
+  font-size: .8rem;
+  
+}
+
 /* Services Image Section */
 .services-img {
   min-height: calc(100vh - 100px);
@@ -95,6 +214,7 @@
 
 .first-sec {
   margin-top: 100px;
+  /* border: 2px solid blueviolet; */
 }
 
 .details .box .boxes-details h2 {
